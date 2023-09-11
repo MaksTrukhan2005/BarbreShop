@@ -1,0 +1,10 @@
+.hairStyle{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    width: 60%;
+    height: 80%;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px #00ff8cb7;
+    animation: shadowImage 30s infinite, movePhoto 3s;
+}

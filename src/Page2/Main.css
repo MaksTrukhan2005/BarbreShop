@@ -1,0 +1,129 @@
+.exitButton{
+    position: absolute;
+    top: 85%;
+    width: 10%;
+    height: 10%;
+    animation: arrowBack 1s;
+}
+.exitButton>button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff00;
+    font-size: 30px;
+}
+@keyframes arrowBack {
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 0;
+    }
+}
+.exitButton>button>img{
+    transform: rotate(180deg);
+}
+.exitButton>button>img:hover{
+    transform: rotate(180deg) scale(1.3);
+    transition: all 0.3s ease-in-out 0s;
+}
+  
+.main_wrapper{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background: url(../Page1/css/image/Blue\ Nature\ Documentary\ Film\ YouTube\ Thumbnail.png) no-repeat;
+    background-size: 100%;
+}
+
+.links_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 7%;
+}
+a{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin: 10% 0;
+    font-family: Norwester;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    border-radius: 3rem;
+    text-align: center;
+    letter-spacing: 10px;
+    word-spacing: 5px;
+}
+a:hover{
+    transition: all 0.3s ease-in-out 0s;
+    transform: scale(1.3);
+}
+a:after{
+    content: '>';
+    color: #00FF8C;
+    font-size: 70px;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+a::before{
+    content: '<';
+    color: #00FF8C;
+    font-size: 70px;
+    font-weight: 800;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+a:hover:after{
+    content: '>';
+    font-size: 70px;
+    transform: translate(30px);
+    transition: all 0.3s ease-in-out 0s;
+}
+a:hover:before{
+    content: '<';
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 70px;
+    transform: translate(-30px);
+}
+#showWindow{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+}
+@keyframes movePhoto {
+    0%{
+        transform: translate(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+@keyframes shadowImage {
+    0%{
+        box-shadow: 0 0 30px #00ff8cb7
+    }
+    40%{
+        box-shadow: 0 0 30px #0099ffb7
+    }
+    100%{
+        box-shadow: 0 0 30px #00ff8cb7
+    }
+}
+@font-face {
+    font-family: 'Norwester';
+    src: url('../Page1/css/font-family/norwester.otf');
+}
